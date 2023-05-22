@@ -183,7 +183,7 @@ $.getJSON("<?=base_url()?>/assets/sungai.geojson",function(kode){
  } }).addTo(sungai); 
 });
 
-$.getJSON("<?=base_url()?>/assets/provinsi_poligon.geojson",function(kode){
+$.getJSON("<?=base_url()?>/assets/provinsi_polygon.geojson",function(kode){
  L.geoJson( kode, {
  style: function(feature){
  var fillColor,
