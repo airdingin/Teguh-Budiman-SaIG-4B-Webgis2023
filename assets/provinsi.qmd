@@ -29,7 +29,7 @@ Made only for the purpose of displaying within the Interactive Atlas of Indonesi
     <role>Point of contact</role>
   </contact>
   <links>
-    <link description="" type="Local Area Network" name="Shapefile" size="" mimeType="" url="file://\\WRICSAP029333\GIS\Users\Lauriane\BACK_UPS\Indonesia_Atlas_1\Indonesia_Atlas_Cd_rom_versions\24_Atlas_Indonesia\Install\Data\PopulatedPlaces\Capitals.shp" format=""/>
+    <link name="Shapefile" format="" size="" type="Local Area Network" url="file://\\WRICSAP029333\GIS\Users\Lauriane\BACK_UPS\Indonesia_Atlas_1\Indonesia_Atlas_Cd_rom_versions\24_Atlas_Indonesia\Install\Data\PopulatedPlaces\Capitals.shp" description="" mimeType=""/>
   </links>
   <fees></fees>
   <constraints type="Access">Unrestricted</constraints>
@@ -49,6 +49,6 @@ Made only for the purpose of displaying within the Interactive Atlas of Indonesi
     </spatialrefsys>
   </crs>
   <extent>
-    <spatial maxz="0" maxx="140.71899400000000924" miny="-10.17246399999999973" crs="EPSG:4326" minx="95.33333600000000274" dimensions="2" maxy="5.56666699999999981" minz="0"/>
+    <spatial dimensions="2" miny="-10.17246399999999973" maxx="140.71899400000000924" minx="95.33333600000000274" maxz="0" minz="0" crs="EPSG:4326" maxy="5.56666699999999981"/>
   </extent>
 </qgis>
