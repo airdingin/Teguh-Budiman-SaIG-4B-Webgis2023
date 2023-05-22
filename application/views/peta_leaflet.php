@@ -41,9 +41,7 @@ var groupedOverlays = {
 'Ibu Kota Provinsi' :prov} 
 };
 
-var overlayLayers = {} 
-
-L.control.layers(baseLayers, overlayLayers, {collapsed:true}).addTo(map);
+L.control.groupedLayers(baseLayers, groupedOverlays).addTo(map);
 
 var 
 osmUrl='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'; 
