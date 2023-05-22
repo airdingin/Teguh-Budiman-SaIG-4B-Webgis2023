@@ -4,7 +4,6 @@
 <script>
 
 var prov = new L.LayerGroup();
-
 var map = L.map('map',{ 
     center: [-1.7912604466772375, 116.42311966554416], 
     zoom: 5, 
@@ -17,10 +16,12 @@ var GoogleSatelliteHybrid= L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y
 var Esri_NatGeoWorldMap = 
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',maxZoom: 16
 });
-var GoogleMaps = new L.TileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', { opacity: 1.0, attribution: 'Latihan Web GIS' 
+var GoogleMaps = new L.TileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', { opacity: 1.0, 
+    attribution: 'Latihan Web GIS' 
 });
-var GoogleRoads = new 
-    L.TileLayer('https://mt1.google.com/vt/lyrs=h&x={x}&y={y}&z={z}',{ opacity: 1.0, attribution: 'Latihan Web GIS' 
+var GoogleRoads = new L.TileLayer('https://mt1.google.com/vt/lyrs=h&x={x}&y={y}&z={z}',{
+    opacity: 1.0, 
+    attribution: 'Latihan Web GIS' 
 });
 var baseLayers = {
     'Google Satellite Hybrid': GoogleSatelliteHybrid,
@@ -30,9 +31,10 @@ var baseLayers = {
 }; 
 
 var groupedOverlays = {
-"Peta Dasar" :
-{'Ibu Kota Provinsi':prov}
+"Peta Dasar":{
+'Ibu Kota Provinsi' :prov} 
 };
+
 
 L.control.groupedLayers(baseLayers, groupedOverlays).addTo(map);
 
@@ -98,8 +100,8 @@ L.control.scale({metric: true, position: "bottomleft"}).addTo(map);
 
     $.getJSON("<?=base_url()?>assets/provinsi.geojson",function(data){ 
 var ratIcon = L.icon({ 
-            iconUrl: '<?=base_url()?>assets/Marker-1.png', 
-            iconSize: [12,10] 
+iconUrl: '<?=base_url()?>assets/Marker-1.png', 
+iconSize: [12,10] 
 }); 
 L.geoJson(data,{ 
 pointToLayer: function(feature,latlng){ 
@@ -108,7 +110,7 @@ marker.bindPopup(feature.properties.CITY_NAME);
 return marker; 
 } 
 }).addTo(prov); 
-}); 
+});
 
 </script>
 
