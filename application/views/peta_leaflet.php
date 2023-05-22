@@ -115,14 +115,12 @@ iconSize: [12,10]
 }); 
 L.geoJson(data,{ 
 pointToLayer: function(feature,latlng){ 
-var marker = L.marker(latlng,{icon: ratIcon}); 
-marker.bindPopup(feature.properties.CITY_NAME); 
-return marker; 
-} 
-}).addTo(prov); 
-});
-
-
+            var marker = L.marker(latlng,{icon: ratIcon}); 
+            marker.bindPopup(feature.properties.CITY_NAME); 
+            return marker; 
+        } 
+    }).addTo(prov); 
+}); 
 
 </script>
 
