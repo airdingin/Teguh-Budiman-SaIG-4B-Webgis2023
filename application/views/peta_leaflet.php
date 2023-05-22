@@ -4,6 +4,9 @@
 <script>
 
 var prov = new L.LayerGroup();
+var faskes = new L.LayerGroup();
+
+
 var map = L.map('map',{ 
     center: [-1.7912604466772375, 116.42311966554416], 
     zoom: 5, 
@@ -32,13 +35,20 @@ var baseLayers = {
 
 var groupedOverlays = {
 "Peta Dasar":{
-'Ibu Kota Provinsi' :prov} 
+'Ibu Kota Provinsi' :prov
+},
+"Peta Khusus":{
+'Fasilitas Kesehatan' :faskes
+}
+
 };
+
 
 
 L.control.groupedLayers(baseLayers, groupedOverlays).addTo(map);
 
-var osmUrl='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'; 
+var
+osmUrl='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'; 
 var osmAttrib='Map data &copy; OpenStreetMap contributors'; 
 var osm2 = new L.TileLayer(osmUrl, {minZoom: 0, maxZoom: 13, attribution: osmAttrib }); 
 var rect1 = {color: "#ff1100", weight: 3}; 
@@ -98,11 +108,11 @@ L.control.scale({metric: true, position: "bottomleft"}).addTo(map);
     return div; } 
     north.addTo(map);
 
-    $.getJSON("<?=base_url()?>assets/provinsi.geojson",function(data){ 
-var ratIcon = L.icon({ 
-iconUrl: '<?=base_url()?>assets/Marker-1.png', 
-iconSize: [12,10] 
-}); 
+$.getJSON("<?=base_url()?>assets/provinsi.geojson",function(data){ 
+                            var ratIcon = L.icon({ 
+                                iconUrl:'<?=base_url()?>assets/Marker-1.png',
+                                iconSize: [12,10] 
+                            }); 
 L.geoJson(data,{ 
 pointToLayer: function(feature,latlng){ 
 var marker = L.marker(latlng,{icon: ratIcon}); 
