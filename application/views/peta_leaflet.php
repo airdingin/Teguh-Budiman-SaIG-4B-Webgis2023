@@ -40,12 +40,12 @@ var groupedOverlays = {
 "Peta Khusus":{
 'Fasilitas Kesehatan' :faskes
 }
-
 };
 
+var overlayLayers = {} 
 
+L.Control.GroupedLayers(baseLayers, groupedOverlays).addTo(map);
 
-L.control.groupedLayers(baseLayers, groupedOverlays).addTo(map);
 
 var
 osmUrl='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'; 
@@ -121,6 +121,49 @@ return marker;
 } 
 }).addTo(prov); 
 });
+
+$.getJSON("<?=base_url()?>assets/rsu.geojson",function(data){ 
+var ratIcon = L.icon({ 
+iconUrl: '<?=base_url()?>assets/Marker-3.png', 
+iconSize: [12,10] 
+}); 
+L.geoJson(data,{ 
+pointToLayer: function(feature,latlng){ 
+var marker = L.marker(latlng,{icon: ratIcon}); 
+marker.bindPopup(feature.properties.NAMOBJ); 
+return marker; 
+} 
+}).addTo(faskes); 
+});
+
+$.getJSON("<?=base_url()?>assets/poliklinik.geojson",function(data){ 
+var ratIcon = L.icon({ 
+iconUrl: '<?=base_url()?>assets/Marker-4.png', 
+iconSize: [12,10] 
+}); 
+L.geoJson(data,{ 
+pointToLayer: function(feature,latlng){ 
+var marker = L.marker(latlng,{icon: ratIcon}); 
+marker.bindPopup(feature.properties.NAMOBJ); 
+return marker; 
+} 
+}).addTo(faskes); 
+});
+
+$.getJSON("<?=base_url()?>assets/puskesmas.geojson",function(data){ 
+var ratIcon = L.icon({
+iconUrl: '<?=base_url()?>assets/Marker-5.png', 
+iconSize: [12,10] 
+}); 
+L.geoJson(data,{ 
+pointToLayer: function(feature,latlng){ 
+var marker = L.marker(latlng,{icon: ratIcon}); 
+marker.bindPopup(feature.properties.NAMOBJ); 
+return marker; 
+} 
+}).addTo(faskes); 
+});
+
 
 </script>
 

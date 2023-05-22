@@ -43,6 +43,7 @@
  <script type="text/javascript" src="<?=base_url()?>assets/Leaflet.Coordinates-0.1.5.min.js"></script> 
 <link rel="stylesheet" href="<?=base_url()?>assets/Leaflet.Coordinates-0.1.5.css"/>
 
-
+<link rel="stylesheet" href="<?=base_url()?>assets/leaflet.groupedlayercontrol.css" />
+<script src="<?=base_url()?>assets/leaflet.groupedlayercontrol.js"></script>
 
 </head>
