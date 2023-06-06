@@ -15,9 +15,10 @@ var map = L.map('map',{
     zoom: 5, 
     zoomControl: false,
     layers:[] });
-var GoogleSatelliteHybrid= L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', { 
+    
+var GoogleSatelliteHybrid = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', { 
     maxZoom: 22, 
-    attribution: 'Huhu' 
+    attribution: 'Hehe' 
 }).addTo(map);
 var Esri_NatGeoWorldMap = 
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',maxZoom: 16
@@ -219,7 +220,7 @@ $.getJSON("<?=base_url()?>/assets/provinsi_polygon.geojson",function(kode){
  }).addTo(provin);
  });
 
- const legend = L.control.Legend({
+const legend = L.control.Legend({
  position: "bottomright",
  title: "Keterangan",
  collapsed: true,
