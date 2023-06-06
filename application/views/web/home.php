@@ -203,56 +203,21 @@
 
 <!-- our -->
 <div id="important" class="important">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="titlepage">
-          <h2>Some <strong class="yellow">important facts</strong></h2>
-          <span>luptatum. Libero eligendi molestias iure error animi totam laudantium, aspernatur similique id eos a
-          t consectetur illo culpa,</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="important_bg">
-    <div class="container">
-      <div class="row">
+ <div class="container">
+ <div class="row">
+ <div class="col-md-12">
+ <div class="titlepage">
+ <h2>MAP</h2>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="important_bg">
+<!-- memangil web -->
+ <iframe src="<?=base_url()?>/home" width="1260" height="650"></iframe>
+ </div>
+</div>
 
-        <div class="col col-xs-12">
-          <div class="important_box">
-            <h3>200+</h3>
-            <span>Teachers</span>
-          </div>
-        </div>
-        <div class="col col-xs-12">
-          <div class="important_box">
-            <h3>20+</h3>
-            <span>Colleges</span>
-          </div>
-        </div>
-        <div class="col col-xs-12">
-          <div class="important_box">
-            <h3>50+</h3>
-            <span>Courses</span>
-          </div>
-        </div>
-        <div class="col col-xs-12">
-          <div class="important_box">
-            <h3>200+</h3>
-            <span>Members</span>
-          </div>
-        </div>
-        <div class="col col-xs-12">
-          <div class="important_box">
-            <h3>10+</h3>
-            <span>countries</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
 
 <!-- end our -->
 <!-- Courses -->
