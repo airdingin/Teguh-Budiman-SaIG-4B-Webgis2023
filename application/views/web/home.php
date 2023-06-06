@@ -61,10 +61,10 @@
                   <nav class="main-menu ">
                     <ul class="menu-area-main">
                       <li class="active"> <a href="index.html">Home</a> </li>
+                      <li> <a href="#important">MAP</a> </li>
                       <li> <a href="#courses">My Courses </a> </li>
                       <li> <a href="#about">About</a> </li>
                       <li> <a href="#learn">My Profile</a> </li>
-                      <li> <a href="#important">Become an Instructor</a> </li>
                       <li> <a href="#contact">Contact</a> </li>
                      </ul>
                    </nav>
