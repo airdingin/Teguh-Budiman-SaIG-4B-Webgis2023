@@ -60,7 +60,7 @@
                 <div class="limit-box">
                   <nav class="main-menu ">
                     <ul class="menu-area-main">
-                      <li class="active"> <a href="index.html">Homee</a> </li>
+                      <li class="active"> <a href="index.html">Home</a> </li>
                       <li> <a href="#courses">My Courses </a> </li>
                       <li> <a href="#about">About</a> </li>
                       <li> <a href="#learn">My Profile</a> </li>
@@ -501,13 +501,13 @@
           <!-- end footer -->
           <!-- Javascript files-->
           <script src="<?=base_url()?>assets/web/js/jquery.min.js"></script>
-          <script src="<?=base_url()?>assets/web/js/<?=base_url()?>assets/web/js/popper.min.js"></script>
-          <script src="<?=base_url()?>assets/web/js/<?=base_url()?>assets/web/js/bootstrap.bundle.min.js"></script>
-          <script src="<?=base_url()?>assets/web/js/<?=base_url()?>assets/web/js/jquery-3.0.0.min.js"></script>
-          <script src="<?=base_url()?>assets/web/js/<?=base_url()?>assets/web/js/plugin.js"></script>
+          <script src="<?=base_url()?>assets/web/js/popper.min.js"></script>
+          <script src="<?=base_url()?>assets/web/js/bootstrap.bundle.min.js"></script>
+          <script src="<?=base_url()?>assets/web/js/jquery-3.0.0.min.js"></script>
+          <script src="<?=base_url()?>assets/web/js/plugin.js"></script>
           <!-- sidebar -->
-          <script src="<?=base_url()?>assets/web/js/<?=base_url()?>assets/web/js/jquery.mCustomScrollbar.concat.min.js"></script>
-          <script src="<?=base_url()?>assets/web/js/<?=base_url()?>assets/web/js/custom.js"></script>
+          <script src="<?=base_url()?>assets/web/js/jquery.mCustomScrollbar.concat.min.js"></script>
+          <script src="<?=base_url()?>assets/web/js/custom.js"></script>
           <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
 
